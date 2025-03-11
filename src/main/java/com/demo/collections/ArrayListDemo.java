@@ -36,6 +36,7 @@ public class ArrayListDemo {
         for(int x: list){
             System.out.println(x);
         }
+        System.out.println("list = "+list);
 
     }
 }
