@@ -38,8 +38,16 @@ public class ArrayListInitialCapacityPrint {
 
         /*
 
-        / How to run this in command prompt?
+        NOTE: This program doesn't get executed in IDE.
+        The error we're encountering, java.lang.reflect.InaccessibleObjectException,
+        occurs because we're trying to use reflection to access a private or restricted field (elementData in ArrayList) in a module (in this case,
+        java.base, which contains java.util.ArrayList), but the Java module system (introduced in Java 9) is preventing it.
+        This is due to the strong encapsulation enforced by the Java Platform Module System (JPMS).
 
+
+        // How to run this in command prompt?
+
+        //cd <project-working-directory>/java_collections/src/main/java
         //javac -d . com/demo/collections/ArrayListInitialCapacityPrint.java
         //java --add-opens java.base/java.util=ALL-UNNAMED com.demo.collections.ArrayListInitialCapacityPrint
 
@@ -48,7 +56,6 @@ public class ArrayListInitialCapacityPrint {
         saurav-mac:java saurav$ javac -d . com/demo/collections/ArrayListInitialCapacityPrint.java
         saurav-mac:java saurav$ ls
         com
-
         saurav-mac:java saurav$ java --add-opens java.base/java.util=ALL-UNNAMED com.demo.collections.ArrayListInitialCapacityPrint
         ArrayList capacity: 5
 
