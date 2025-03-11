@@ -24,4 +24,4 @@ The goal is to provide hands-on experience with common collection classes such a
 
 - **Java Development Kit (JDK)**: Version 17 or later (recommended).
 - **Integrated Development Environment (IDE)**: IntelliJ IDEA, Eclipse, or any preferred IDE.
-- **Build Tool**: Maven or Gradle (optional, for dependency management).
+- **Build Tool**: Maven (required for dependency management).
