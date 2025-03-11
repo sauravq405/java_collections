@@ -6,7 +6,7 @@ public class CollectionDemo {
         //Vector, Stack, Hashtable - Legacy collection classes
         //Problems - Inconsistency, Lack of interoperability, No common interface
 
-        //After collections introduced in java 1.2
+        //Since collections introduced in java 1.2
         //Features - Unified architecture, interoperability, re-usability, efficiency
 
 
