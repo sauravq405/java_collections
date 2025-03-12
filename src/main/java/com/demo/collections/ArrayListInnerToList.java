@@ -2,6 +2,7 @@ package com.demo.collections;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ArrayListInnerToList {
@@ -50,6 +51,9 @@ public class ArrayListInnerToList {
         Integer[] integers = list4.toArray(new Integer[0]);//we allot size as 0 so that new internal array is created
         // and most importantly on the type
         System.out.println("integer array from list4: "+Arrays.toString(integers));
+
+        Collections.sort(list4);
+        System.out.println("list4: "+list4);
 
 
 
