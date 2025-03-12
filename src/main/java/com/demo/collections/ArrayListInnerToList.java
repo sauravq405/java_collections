@@ -28,5 +28,30 @@ public class ArrayListInnerToList {
         System.out.println("list2: "+list2);
         System.out.println("list3: "+list3);
 
+        ArrayList<Integer> list4 = new ArrayList<>(list2); //modifiable
+        list4.add(12);
+        System.out.println("list4: "+list4);
+
+        List<Integer> list5 = List.of(10, 11, 22, 33); //unmodifiable
+        list4.addAll(list5); //modifying
+        System.out.println("list4: "+list4);
+
+        boolean has10= list4.contains(10); //10 is element not index
+        System.out.println("list4.contains(10): "+has10);
+
+        list4.remove(10); //remove(primitive) -> removes based on index
+        list4.remove(Integer.valueOf(10)); //remove(object) -> removes based on element
+        System.out.println("list4: "+list4);
+
+        has10= list4.contains(10); //10 is element not index
+        System.out.println("list4.contains(10): "+has10);
+
+        Object[] array = list4.toArray();
+        Integer[] integers = list4.toArray(new Integer[0]);//we allot size as 0 so that new internal array is created
+        // and most importantly on the type
+        System.out.println("integer array from list4: "+Arrays.toString(integers));
+
+
+
     }
 }
