@@ -15,6 +15,7 @@ public class ArrayListInnerToList {
         
         Integer[] arr = {1, 2, 3, 4, 5, 6, 7};
         List<Integer> list3 = Arrays.asList(arr);
+        list3.sort(null); //modifiable, not immutable
         System.out.println("list3: "+list3.getClass().getName());
 
          //list1 is resizable
@@ -33,7 +34,7 @@ public class ArrayListInnerToList {
         list4.add(12);
         System.out.println("list4: "+list4);
 
-        List<Integer> list5 = List.of(10, 11, 22, 33); //unmodifiable
+        List<Integer> list5 = List.of(10, 11, 22, 33); //unmodifiable, immutable -> can't be sorted or resized or added
         list4.addAll(list5); //modifying
         System.out.println("list4: "+list4);
 
