@@ -32,7 +32,8 @@ public class ComparatorComparingMethodDemo {
         //after sorting based on gpa, sort based on alphabets (only for matching gpas) -> thenComparing() is used
         comparator = Comparator.comparing(Student::getGpa).reversed().thenComparing(Student::getName);
         students.sort(comparator);
-        Collections.sort(students, Collections.reverseOrder());
+       // Collections.sort(students, comparator);
+       // Collections.sort(students, Collections.reverseOrder());
         for (Student s : students) {
             System.out.println(s.getName() + ": "+s.getGpa());
         }
