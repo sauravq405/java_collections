@@ -8,12 +8,12 @@ import java.util.List;
 public class CustomObjectComparatorDemo {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
-        students.add(new Student("Alice", 3.8));
-        students.add(new Student("Bob", 3.5));
-        students.add(new Student("Charlie", 3.9));
-        students.add(new Student("David", 3.6));
-        students.add(new Student("Adam", 3.7));
-        students.add(new Student("Eve", 3.7));
+        students.add(new Student("Alice", 3.8, 0));
+        students.add(new Student("Bob", 3.5, 0));
+        students.add(new Student("Charlie", 3.9, 0));
+        students.add(new Student("David", 3.6, 0));
+        students.add(new Student("Adam", 3.7, 0));
+        students.add(new Student("Eve", 3.7, 0));
         //sort students in descending order of their gpa -- highest gpa should come first
         //students.sort((o1, o2) -> (int) (o1.getGpa() - o2.getGpa())); //BLUNDER -> casting to int will lead to loss of decimal part of double values
         students.sort((o1, o2) -> {
