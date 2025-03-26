@@ -2,7 +2,7 @@ package com.demo.collections.model;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student>{
     private String name;
     private double gpa;
 
@@ -61,5 +61,11 @@ public class Student {
                 ", gpa=" + gpa +
                 ", id=" + id +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        //return Integer.compare(this.getName().length(), o.getName().length());
+        return Double.compare(this.getGpa(), o.getGpa());
     }
 }
